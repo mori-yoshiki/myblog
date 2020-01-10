@@ -1,0 +1,14 @@
+
+<div class="blog-show-wrapper">
+  <div class: "show-image">
+    <%= image_tag @blog.image.url, class: "image" %>
+  </div>
+  <div class: "show-title">
+    <%= @blog.title%>
+  </div>
+  <div class: "show-content">
+    <%= @blog.content%>
+  </div>
+    <%= link_to "編集", edit_blog_path %>
+     <%= link_to "削除", blog_path, method: :delete %>
+</div>
